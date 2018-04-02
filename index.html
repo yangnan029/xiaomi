@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米商城</title>
     <link rel="stylesheet" href="./css/index.css">
-    
-<script src="http://www.jq22.com/demo/zfb/js/jquery-1.7.2.min.js"></script>
-
-<script src="http://www.jq22.com/demo/zfb/js/jquery.flexslider-min.js"></script>
+    <script src="./jquery.js"></script>
 </head>
 
 <body>
@@ -54,7 +51,7 @@
                             <img src="https://i1.mifile.cn/f/i/g/2015/pclogoGIF164mifen.gif" alt="">
                         </span>
                     </a>
-                    
+
                     <a href="#">
                         <span>小米手机</span>
                         <div class="titleActive">
@@ -306,75 +303,118 @@
                     <input type="text"><button></button>
                 </div>
             </div>
-            
+
             <div class="sub">
                 <div class="sub_left">
                     <ul>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                         <li class="clearfix">
-                            <span>手机 电话卡</span><i></i>
+                            <span>手机 电话卡</span>
+                            <i></i>
                             <div class="sub_left_show">
                                 <span>小米 MIX 2S</span>
                             </div>
                         </li>
                     </ul>
-                    
+
                 </div>
-                <div class="banner">
-                    <img src="https://i1.mifile.cn/a4/xmad_15222098115721_eamHD.jpg" alt="">
+                <div id="banner">
+                    <!-- <div id="banner_bg">
+                    </div> -->
+                    <!--标题背景-->
+                    <div id="banner_info">
+                    </div>
+                    <!--标题-->
+                    <ul>
+                        <li class="on">
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                        <li>
+                            3
+                        </li>
+                        <li>
+                            4
+                        </li>
+                    </ul>
+                    <div id="banner_list">
+                        <a href="#" target="_blank">
+                            <img src="https://i1.mifile.cn/a4/xmad_15206016284836_xjlad.jpg" >
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="https://i1.mifile.cn/a4/xmad_15222923867508_soCnQ.jpg">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="https://i1.mifile.cn/a4/xmad_15222098115721_eamHD.jpg">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="https://i1.mifile.cn/a4/xmad_15221454912161_bsGRM.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="home_list">
@@ -425,12 +465,12 @@
                         <div class="time_tit">10:00场</div>
                         <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
                         <div class="time_desc">距离结束还有</div>
-                        <div class="time">
-                            <div class="box">00</div>
+                        <div id="time">
+                            <div class="box" id="hour">00</div>
                             <div class="dosh">:</div>
-                            <div class="box">00</div>
+                            <div class="box"  id="min">00</div>
                             <div class="dosh">:</div>
-                            <div class="box">00</div>
+                            <div class="box" id="sec">00</div>
                         </div>
                     </li>
                     <li>
@@ -577,6 +617,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1510019402.48089978!220x220.jpg" alt="">
@@ -585,6 +629,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1510019402.48089978!220x220.jpg" alt="">
@@ -593,6 +641,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1510019402.48089978!220x220.jpg" alt="">
@@ -601,6 +653,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a4/xmad_15167083667254_xXTHV.jpg" alt="">
@@ -612,6 +668,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1510019402.48089978!220x220.jpg" alt="">
@@ -620,6 +680,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1510019402.48089978!220x220.jpg" alt="">
@@ -628,18 +692,22 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <div class="descript">
-                                <p>小白摄像机</p>
-                                <p class="price">399元</p>
+                            <p>小白摄像机</p>
+                            <p class="price">399元</p>
                         </div>
                         <img src="https://i1.mifile.cn/a1/pms_1469523170.25518983!220x220.jpg" alt="">
                     </li>
                     <li>
                         <div class="more">
-                                <p>浏览更多</p>
-                                <p class="small">电脑</p>
+                            <p>浏览更多</p>
+                            <p class="small">电脑</p>
                         </div>
                         <img src="./images/right.png" alt="">
                     </li>
@@ -669,6 +737,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -677,6 +749,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -685,6 +761,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -693,6 +773,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
@@ -704,6 +788,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -712,6 +800,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -720,18 +812,22 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <div class="descript">
-                                <p>小白摄像机</p>
-                                <p>399元</p>
+                            <p>小白摄像机</p>
+                            <p>399元</p>
                         </div>
                         <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
                     </li>
                     <li>
                         <div class="more">
-                                <p>浏览更多</p>
-                                <p class="small">电脑</p>
+                            <p>浏览更多</p>
+                            <p class="small">电脑</p>
                         </div>
                         <img src="./images/right.png" alt="">
                     </li>
@@ -761,6 +857,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -769,6 +869,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -777,6 +881,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -785,6 +893,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
@@ -796,6 +908,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -804,6 +920,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -812,115 +932,147 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
-                            <div class="descript">
-                                    <p>小白摄像机</p>
-                                    <p>399元</p>
-                            </div>
-                            <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
-                        </li>
-                        <li>
-                            <div class="more">
-                                    <p>浏览更多</p>
-                                    <p class="small">电脑</p>
-                            </div>
-                            <img src="./images/right.png" alt="">
-                        </li>
+                        <div class="descript">
+                            <p>小白摄像机</p>
+                            <p>399元</p>
+                        </div>
+                        <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
+                    </li>
+                    <li>
+                        <div class="more">
+                            <p>浏览更多</p>
+                            <p class="small">电脑</p>
+                        </div>
+                        <img src="./images/right.png" alt="">
+                    </li>
                 </ul>
             </div>
             <div class="imgs">
                 <img src="https://i1.mifile.cn/a4/xmad_15211934704464_HPmui.jpg" alt="">
             </div>
             <div class="homeelec">
-                    <div class="title">
-                        <span>配件</span>
-                        <div class="right">
-                            <span>热门</span>
-                            <span>电视影音</span>
-                            <span>电脑</span>
-                            <span>家居</span>
-                        </div>
+                <div class="title">
+                    <span>配件</span>
+                    <div class="right">
+                        <span>热门</span>
+                        <span>电视影音</span>
+                        <span>电脑</span>
+                        <span>家居</span>
                     </div>
-                    <ul class="clearfix">
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
-                            <p class="title">红米5 2+16GB 移动4G+版 金色</p>
-                            <p class="desc">千元全面屏，前置柔光自拍</p>
-                            <p class="price">
-                                <span class="now">739元</span>
-                            </p>
-                        </li>
-                        <li>
-                                <div class="descript">
-                                        <p>小白摄像机</p>
-                                        <p>399元</p>
-                                </div>
-                                <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
-                            </li>
-                            <li>
-                                <div class="more">
-                                        <p>浏览更多</p>
-                                        <p class="small">电脑</p>
-                                </div>
-                                <img src="./images/right.png" alt="">
-                            </li>
-                    </ul>
                 </div>
+                <ul class="clearfix">
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
+                        <p class="title">红米5 2+16GB 移动4G+版 金色</p>
+                        <p class="desc">千元全面屏，前置柔光自拍</p>
+                        <p class="price">
+                            <span class="now">739元</span>
+                        </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="descript">
+                            <p>小白摄像机</p>
+                            <p>399元</p>
+                        </div>
+                        <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
+                    </li>
+                    <li>
+                        <div class="more">
+                            <p>浏览更多</p>
+                            <p class="small">电脑</p>
+                        </div>
+                        <img src="./images/right.png" alt="">
+                    </li>
+                </ul>
+            </div>
             <div class="imgs">
                 <img src="https://i1.mifile.cn/a4/xmad_15204800720086_TdBPv.jpg" alt="">
             </div>
@@ -945,6 +1097,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -953,6 +1109,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -961,6 +1121,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -969,6 +1133,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a4/xmad_15223057213745_UlwgQ.jpg" alt="">
@@ -980,6 +1148,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -988,6 +1160,10 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://i1.mifile.cn/a1/pms_1521442671.5222520!220x220.jpg" alt="">
@@ -996,21 +1172,25 @@
                         <p class="price">
                             <span class="now">739元</span>
                         </p>
+                        <div class="details">
+                            <p class="desc">小米电视4A40寸的已经挂在墙上！大小正适合！智能又...</p>
+                            <p class="author"> 来自于 缘分的力量解 的评价 </p>
+                        </div>
                     </li>
                     <li>
-                            <div class="descript">
-                                    <p>小白摄像机</p>
-                                    <p>399元</p>
-                            </div>
-                            <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
-                        </li>
-                        <li>
-                            <div class="more">
-                                    <p>浏览更多</p>
-                                    <p class="small">电脑</p>
-                            </div>
-                            <img src="./images/right.png" alt="">
-                        </li>
+                        <div class="descript">
+                            <p>小白摄像机</p>
+                            <p>399元</p>
+                        </div>
+                        <img src="https://i1.mifile.cn/a1/pms_1507877361.06147174.jpg?width=80&height=80" alt="">
+                    </li>
+                    <li>
+                        <div class="more">
+                            <p>浏览更多</p>
+                            <p class="small">电脑</p>
+                        </div>
+                        <img src="./images/right.png" alt="">
+                    </li>
                 </ul>
             </div>
             <div class="recommend">
@@ -1025,62 +1205,78 @@
                         <p class="desc">1人好评</p>
                     </li>
                     <li>
-                            <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
-                            <p class="title">小爱音箱mini</p>
-                            <p class="price">169元</p>
-                            <p class="desc">1人好评</p>
-                        </li>
-                        <li>
-                                <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
-                                <p class="title">小爱音箱mini</p>
-                                <p class="price">169元</p>
-                                <p class="desc">1人好评</p>
-                        </li>
-                            <li>
-                                    <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
-                                    <p class="title">小爱音箱mini</p>
-                                    <p class="price">169元</p>
-                                    <p class="desc">1人好评</p>
-                            </li>
-                                <li>
-                                        <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
-                                        <p class="title">小爱音箱mini</p>
-                                        <p class="price">169元</p>
-                                        <p class="desc">1人好评</p>
-                                </li>
+                        <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
+                        <p class="title">小爱音箱mini</p>
+                        <p class="price">169元</p>
+                        <p class="desc">1人好评</p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
+                        <p class="title">小爱音箱mini</p>
+                        <p class="price">169元</p>
+                        <p class="desc">1人好评</p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
+                        <p class="title">小爱音箱mini</p>
+                        <p class="price">169元</p>
+                        <p class="desc">1人好评</p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a1/pms_1522137800.42025983!140x140.jpg" alt="">
+                        <p class="title">小爱音箱mini</p>
+                        <p class="price">169元</p>
+                        <p class="desc">1人好评</p>
+                    </li>
                 </ul>
             </div>
             <div class="comment">
-                    <div class="title">
-                        <span>热评产品</span>
-                    </div>
-                    <ul class="clearfix">
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
-                            <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
-                            <p class="author">来自于子书雁的评价</p>
-                            <p class="info"><span class="name">90分旅行箱20寸</span><span class="sep">|</span><span class="price">299元</span></p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
-                            <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
-                            <p class="author">来自于子书雁的评价</p>
-                            <p class="info"><span class="name">90分旅行箱20寸</span><span class="sep">|</span><span class="price">299元</span></p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
-                            <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
-                            <p class="author">来自于子书雁的评价</p>
-                            <p class="info"><span class="name">90分旅行箱20寸</span><span class="sep">|</span><span class="price">299元</span></p>
-                        </li>
-                        <li>
-                            <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
-                            <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
-                            <p class="author">来自于子书雁的评价</p>
-                            <p class="info"><span class="name">90分旅行箱20寸</span><span class="sep">|</span><span class="price">299元</span></p>
-                        </li>
-                    </ul>
+                <div class="title">
+                    <span>热评产品</span>
                 </div>
+                <ul class="clearfix">
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
+                        <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
+                        <p class="author">来自于子书雁的评价</p>
+                        <p class="info">
+                            <span class="name">90分旅行箱20寸</span>
+                            <span class="sep">|</span>
+                            <span class="price">299元</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
+                        <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
+                        <p class="author">来自于子书雁的评价</p>
+                        <p class="info">
+                            <span class="name">90分旅行箱20寸</span>
+                            <span class="sep">|</span>
+                            <span class="price">299元</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
+                        <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
+                        <p class="author">来自于子书雁的评价</p>
+                        <p class="info">
+                            <span class="name">90分旅行箱20寸</span>
+                            <span class="sep">|</span>
+                            <span class="price">299元</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="https://i1.mifile.cn/a4/62d44838-f464-4c11-887c-9168645ae797" alt="">
+                        <p class="jurge">这箱子很好，外观漂亮，实用性强。很轻，有点软但不影响它的坚固性。</p>
+                        <p class="author">来自于子书雁的评价</p>
+                        <p class="info">
+                            <span class="name">90分旅行箱20寸</span>
+                            <span class="sep">|</span>
+                            <span class="price">299元</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
             <div class="content">
                 <div class="title">
                     <span>内容</span>
@@ -1092,7 +1288,7 @@
                         <p class="two">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
                         <p class="price">29.37元</p>
                         <img src="https://i1.mifile.cn/a4/5e5da924-84e3-4959-9e25-5891cdf30757" alt="">
-                    </li> 
+                    </li>
                     <li>
                         <h2>图书</h2>
                         <p class="one">哈利·波特与被诅咒的孩子</p>
@@ -1208,7 +1404,8 @@
                     <dl class="last">
                         <dd class="number">400-100-5678</dd>
                         <dd>
-                            <p>周一至周日：8:00-18:00<br/>(仅收市话费)</p>
+                            <p>周一至周日：8:00-18:00
+                                <br/>(仅收市话费)</p>
                         </dd>
                         <dd>
                             <span>在线客服</span>
@@ -1220,7 +1417,7 @@
     </div>
     <div class="site">
         <div class="container">
-            
+
             <div class="site_info clearfix">
                 <div class="logo">
                     <img src="https://s01.mifile.cn/i/logo-footer.png?v2" alt="">
@@ -1265,6 +1462,73 @@
             <div class="slogan"></div>
         </div>
     </div>
+    <script type="text/javascript">
+        var t = n = 0,
+        count;
+        $(document).ready(function() {
+            count = $("#banner_list a").length;
+            $("#banner_list a:not(:first-child)").hide();
+            $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+            $("#banner_info").click(function() {
+                window.open($("#banner_list a:first-child").attr('href'), "_blank")
+            });
+            $("#banner li").click(function() {
+                var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+                n = i;
+                if (i >= count) return;
+                $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+                $("#banner_info").unbind().click(function() {
+                    window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+                }) 
+                $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+                document.getElementById("banner").style.background = "";
+                $(this).toggleClass("on");
+                $(this).siblings().removeAttr("class");
+            });
+            t = setInterval("showAuto()", 4000);
+            $("#banner").hover(function() {
+                clearInterval(t)
+            },
+            function() {
+                t = setInterval("showAuto()", 4000);
+            });
+        })
+      
+        function showAuto() {
+            n = n >= (count - 1) ? 0 : ++n;
+            $("#banner li").eq(n).trigger('click');
+        }
+
+        function count_down(o){
+        var www_qsyz_net=/^[\d]{4}-[\d]{1,2}-[\d]{1,2}( [\d]{1,2}:[\d]{1,2}(:[\d]{1,2})?)?$/ig,str='',conn,s;
+        // 检验时间格式
+        if(!o.match(www_qsyz_net)){
+                alert('参数格式为2012-01-01[ 01:01[:01]].\r其中[]内的内容可省略');
+                return false;
+        }
+        // 结束
+        var sec=(new Date(o.replace(/-/ig,'/')).getTime() - new Date().getTime())/1000;
+        if(sec > 0){
+                conn='还有';
+        }else{
+                conn='已过去';
+                sec*=-1;
+        }
+        s={'天':sec/24/3600,'小时':sec/3600%24,'分':sec/60%60,'秒':sec%60};
+            // console.log(s)
+
+        for(i in s){
+                if(Math.floor(s[i])>0 ) str += Math.floor(s[i]) + i;
+        }
+        if(Math.floor(sec)==0){ str='0秒'; }
+        $('#hour').text(Math.floor(s.小时));
+        $('#min').text(Math.floor(s.分));
+        $('#sec').text(Math.floor(s.秒));
+        // document.getElementById('time').innerHTML = '<h2>'+conn+'<strong>'+str+'</strong></h2><p>加油吧 少年 ！！！</p>' ;
+        setTimeout(function(){count_down(o)},1000);
+}
+count_down('2018-04-25 00:00:00');
+    </script>
 </body>
 
 </html>
