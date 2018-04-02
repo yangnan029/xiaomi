@@ -1,0 +1,877 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.sep {
+  color: #424242;
+  margin: 0.5em;
+  font-style: normal;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.top {
+  height: 40px;
+  line-height: 40px;
+  background: #000;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.top .top_left {
+  float: left;
+}
+.top .top_right {
+  float: right;
+}
+.top span:hover {
+  color: #ffffff;
+}
+.main .container {
+  position: relative;
+}
+.main .container .title .logo {
+  float: left;
+  width: 55px;
+  height: 55px;
+  background: #ff6700;
+  text-align: center;
+  margin-top: 22px;
+}
+.main .container .title .title_list {
+  float: left;
+  height: 88px;
+  padding: 12px 0 0 30px;
+}
+.main .container .title .title_list a {
+  color: #333;
+  display: inline-block;
+  padding: 26px 10px 38px;
+}
+.main .container .title .title_list a .titleActive {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 999;
+  background: #fff;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+}
+.main .container .title .title_list a .titleActive ul {
+  text-align: center;
+}
+.main .container .title .title_list a .titleActive ul li {
+  display: inline-block;
+}
+.main .container .title .title_list a .titleActive ul li img {
+  display: inline-block;
+  width: 160px;
+  height: 110px;
+  margin: 0 auto 16px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+.main .container .title .title_list a .titleActive ul li:last-child img {
+  border-right: 0;
+}
+.main .container .title .title_list a .titleActive ul li .title {
+  line-height: 20px;
+  color: #333333;
+}
+.main .container .title .title_list a .titleActive ul li .price {
+  line-height: 20px;
+  color: #ff6700;
+  padding-bottom: 40px;
+}
+.main .container .title .title_list a:hover span {
+  color: #ff6700;
+}
+.main .container .title .title_list a:hover .titleActive {
+  display: block;
+}
+.main .container .title .title_list a.exposure {
+  width: 165px;
+  text-align: center;
+  padding: 0;
+  margin-right: 15px;
+}
+.main .container .title .title_list a.exposure img {
+  vertical-align: middle;
+}
+.main .container .title .search {
+  float: right;
+  width: 297px;
+  margin-top: 25px;
+}
+.main .container .title .search input {
+  width: 223px;
+  height: 48px;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  line-height: 48px;
+  vertical-align: top;
+}
+.main .container .title .search button {
+  width: 52px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  font-size: 24px;
+  line-height: 24px;
+  background: #ffffff;
+  border-left: 0;
+}
+.main .container .sub {
+  position: relative;
+}
+.main .container .sub img {
+  width: 100%;
+}
+.main .container .sub .sub_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  width: 234px;
+}
+.main .container .sub .sub_left ul {
+  position: relative;
+}
+.main .container .sub .sub_left ul li {
+  display: block;
+  padding-left: 30px;
+  height: 42px;
+  line-height: 42px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.main .container .sub .sub_left ul li .sub_left_show {
+  display: none;
+  color: #000;
+  width: 795px;
+  position: absolute;
+  background: #fff;
+  left: 234px;
+  top: -20px;
+  height: 458px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.main .container .sub .sub_left ul li i {
+  display: block;
+  float: right;
+  width: 8px;
+  height: 8px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: 2px solid #fff;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+.main .container .sub .sub_left ul li:hover {
+  background: #ff6700;
+}
+.main .container .sub .sub_left ul li:hover .sub_left_show {
+  display: block;
+}
+.main .container .home_list {
+  margin-top: 14px;
+  margin-bottom: 26px;
+}
+.main .container .home_list ul li {
+  float: left;
+}
+.main .container .home_list ul li:hover img {
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.main .container .home_list ul li img {
+  width: 315px;
+  margin-left: 15px;
+}
+.main .container .home_list ul li:first-child {
+  width: 234px;
+  color: #333333;
+  background: #5f5750;
+}
+.main .container .home_list ul li:first-child span {
+  display: inline-block;
+  width: 70px;
+  height: 85px;
+  padding: 0 3px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  vertical-align: middle;
+}
+.main .container .home_list ul li:first-child span.Fcode {
+  border-right: none;
+}
+.main .container .home_list ul li:first-child span.mifen {
+  border-bottom: none;
+}
+.main .container .home_list ul li:first-child span img {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 24px;
+  width: 24px;
+}
+.main .container .home_list ul li:first-child span i {
+  font-style: normal;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+.main .container .home_list ul li:first-child span:hover i {
+  color: #ffffff;
+}
+.main .container .mi_flash {
+  padding-bottom: 40px;
+}
+.main .container .mi_flash .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.main .container .mi_flash .title .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .container .mi_flash .title .right i {
+  display: inline-block;
+  text-align: center;
+  width: 24px;
+  height: 16px;
+  padding: 3px 5px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+}
+.main .container .mi_flash ul li {
+  float: left;
+  width: 234px;
+  height: 300px;
+  margin: 0 14px 0 0;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+.main .container .mi_flash ul li:last-child {
+  margin: 0;
+}
+.main .container .mi_flash ul li:first-child {
+  background: #f1eded;
+}
+.main .container .mi_flash ul li:first-child .time_tit {
+  margin-top: 39px;
+  font-size: 21px;
+  color: #ef3a3b;
+  padding-top: 15px;
+}
+.main .container .mi_flash ul li:first-child img {
+  margin: 25px auto;
+  width: auto;
+}
+.main .container .mi_flash ul li:first-child .time_desc {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 15px;
+}
+.main .container .mi_flash ul li:first-child .time {
+  width: 168px;
+  margin: 28px auto 0;
+}
+.main .container .mi_flash ul li:first-child .time .box {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  font-size: 24px;
+  background: #605751;
+  line-height: 46px;
+  text-align: center;
+}
+.main .container .mi_flash ul li:first-child .time .dosh {
+  display: inline-block;
+}
+.main .container .mi_flash ul li img {
+  display: block;
+  width: 160px;
+  margin: 25px auto 22px;
+}
+.main .container .mi_flash ul li .title {
+  margin: 0 20px 3px;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.main .container .mi_flash ul li .desc {
+  height: 18px;
+  margin: 0 20px 12px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.main .container .mi_flash ul li .price {
+  color: #ff6709;
+}
+.main .container .mi_flash ul li .price del {
+  color: #b0b0b0;
+}
+.main .container .imgs {
+  height: 120px;
+  margin: 2px 0 42px;
+}
+.main .container .imgs img {
+  height: 120px;
+}
+.product {
+  background: #f5f5f5;
+}
+.product .phone {
+  padding-top: 60px;
+}
+.product .phone .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .phone .title .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  line-height: 58px;
+  color: #424242;
+}
+.product .phone ul li {
+  width: 234px;
+  float: left;
+  height: 260px;
+  padding: 20px 0;
+  background: #ffffff;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.product .phone ul li img {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+.product .phone ul li:first-child {
+  height: 614px;
+  padding: 0;
+  margin-left: 0;
+}
+.product .phone ul li:first-child img {
+  width: 234px;
+  height: 614px;
+}
+.product .phone ul li .title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 2;
+}
+.product .phone ul li .desc {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.product .phone ul li .price {
+  margin: 0 10px 14px;
+  color: #ff6709;
+}
+.product .phone ul li:hover {
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1);
+}
+.product .homeelec .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .homeelec .title .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  line-height: 58px;
+  color: #424242;
+}
+.product .homeelec ul li {
+  width: 234px;
+  float: left;
+  height: 260px;
+  padding: 20px 0;
+  background: #ffffff;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.product .homeelec ul li img {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+.product .homeelec ul li .title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 2;
+}
+.product .homeelec ul li .desc {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.product .homeelec ul li .price {
+  margin: 0 10px 14px;
+  color: #ff6709;
+}
+.product .homeelec ul li:last-child {
+  padding: 0;
+  padding-top: 50px;
+  height: 93px;
+}
+.product .homeelec ul li:last-child .more {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+}
+.product .homeelec ul li:last-child .more p {
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+.product .homeelec ul li:last-child .more p.small {
+  font-size: 12px;
+}
+.product .homeelec ul li:last-child img {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+.product .homeelec ul li:nth-last-child(2) {
+  padding: 0;
+  padding-top: 50px;
+  height: 93px;
+}
+.product .homeelec ul li:nth-last-child(2) .descript {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+}
+.product .homeelec ul li:nth-last-child(2) .descript p {
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  line-height: 2;
+}
+.product .homeelec ul li:nth-last-child(2) .descript p.price {
+  color: #ff6709;
+}
+.product .homeelec ul li:nth-last-child(2) img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.product .homeelec ul li:first-child {
+  margin-left: 0;
+  padding: 0;
+}
+.product .homeelec ul li:first-child img {
+  width: 234px;
+  height: 300px;
+}
+.product .homeelec ul li:nth-child(6) {
+  margin-left: 0;
+  padding: 0;
+}
+.product .homeelec ul li:nth-child(6) img {
+  width: 234px;
+  height: 300px;
+}
+.product .imgs {
+  height: 120px;
+  margin: 28px 0 42px;
+}
+.product .imgs img {
+  height: 120px;
+}
+.product .recommend {
+  padding-bottom: 40px;
+}
+.product .recommend .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .recommend .title .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.product .recommend .title .right i {
+  display: inline-block;
+  text-align: center;
+  width: 24px;
+  height: 16px;
+  padding: 3px 5px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+}
+.product .recommend ul li {
+  float: left;
+  width: 234px;
+  height: 300px;
+  margin: 0 14px 0 0;
+  background: #ffffff;
+  text-align: center;
+}
+.product .recommend ul li:last-child {
+  margin: 0;
+}
+.product .recommend ul li img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 25px auto 22px;
+}
+.product .recommend ul li .title {
+  margin: 0 20px 3px;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.product .recommend ul li .desc {
+  height: 18px;
+  margin: 0 20px 12px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.product .recommend ul li .price {
+  color: #ff6709;
+  line-height: 2;
+}
+.product .recommend ul li .price del {
+  color: #b0b0b0;
+}
+.product .comment {
+  padding-bottom: 40px;
+}
+.product .comment .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .comment ul li {
+  float: left;
+  width: 296px;
+  height: 415px;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  background: #ffffff;
+  text-align: left;
+}
+.product .comment ul li:first-child {
+  margin: 0;
+}
+.product .comment ul li img {
+  display: block;
+  width: 296px;
+  height: 220px;
+  margin-bottom: 28px;
+}
+.product .comment ul li .jurge {
+  margin: 0 28px 22px;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 72px;
+}
+.product .comment ul li .author {
+  height: 18px;
+  margin: 0 28px 8px;
+  padding: 0 10px 0 0;
+  font-size: 12px;
+  text-align: left;
+  color: #b0b0b0;
+}
+.product .comment ul li .info {
+  margin: 0 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.product .comment ul li .info .name {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.product .comment ul li .info .price {
+  color: #ff6709;
+}
+.product .content {
+  padding-bottom: 40px;
+}
+.product .content .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .content ul li {
+  float: left;
+  width: 296px;
+  height: 374px;
+  padding: 45px 0 0;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+.product .content ul li:first-child {
+  margin: 0;
+}
+.product .content ul li h2 {
+  margin: 0 10px 18px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product .content ul li p.one {
+  margin: 0 20px 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.product .content ul li p.two {
+  margin: 0 48px 10px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+.product .content ul li p.price {
+  height: 21px;
+  margin: 0 10px 15px;
+  text-align: center;
+  color: #333;
+}
+.product .content ul li img {
+  width: 216px;
+  height: 154px;
+}
+.product .videos {
+  padding-bottom: 40px;
+}
+.product .videos .title {
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+  font-size: 22px;
+  position: relative;
+}
+.product .videos .title .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  line-height: 58px;
+  color: #424242;
+}
+.product .videos ul {
+  width: 1240px;
+}
+.product .videos ul li {
+  float: left;
+  width: 296px;
+  height: 285px;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+  background: #fff;
+}
+.product .videos ul li:first-child {
+  margin-left: 0;
+}
+.product .videos ul li img {
+  width: 296px;
+  height: 180px;
+  margin-bottom: 28px;
+}
+.product .videos ul li .title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+  line-height: 1.5;
+}
+.product .videos ul li .desc {
+  height: 18px;
+  margin: 0;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.footer .container .footer_service {
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.footer .container .footer_service ul li {
+  float: left;
+  width: 19.8%;
+  height: 25px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.footer .container .footer_service ul li:first-child {
+  border-left: none;
+}
+.footer .container .footer_service ul li a {
+  color: #616161;
+}
+.footer .container .footer_links {
+  padding: 40px 0;
+}
+.footer .container .footer_links dl {
+  float: left;
+  width: 160px;
+  height: 112px;
+}
+.footer .container .footer_links dl dt {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #424242;
+}
+.footer .container .footer_links dl dd {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #757575;
+}
+.footer .container .footer_links dl.last {
+  float: right;
+  width: 251px;
+  height: 112px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+.footer .container .footer_links dl.last dd.number {
+  margin: 0 0 5px;
+  font-size: 22px;
+  line-height: 1;
+  color: #ff6700;
+}
+.footer .container .footer_links dl.last dd p {
+  margin: 0 0 16px;
+  font-size: 12px;
+}
+.footer .container .footer_links dl.last dd span {
+  display: inline-block;
+  width: 118px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  background: #fff;
+  color: #ff6700;
+  border: 1px solid #ff6700;
+}
+.site {
+  padding: 30px 0;
+  font-size: 12px;
+  background: #fafafa;
+}
+.site .container .site_info .logo {
+  float: left;
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+}
+.site .container .site_info .foot_text {
+  float: left;
+  color: #b0b0b0;
+}
+.site .container .site_info .foot_text p a {
+  color: #b0b0b0;
+}
+.site .container .site_info .foot_link {
+  float: right;
+  height: 28px;
+  margin: 4px 0 0;
+}
+.site .container .site_info .foot_link img {
+  width: auto;
+  height: 28px;
+  margin-left: 0px;
+}
+.site .container .slogan {
+  margin: 30px auto 0;
+  width: 267px;
+  height: 19px;
+  background: url('https://s01.mifile.cn/i/slogan2016.png') no-repeat center 0;
+}
