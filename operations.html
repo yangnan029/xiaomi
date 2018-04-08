@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery实现增删改查</title>
+    <link rel="stylesheet" href="./css/operations.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        查找:
+        <input type="text" id="search">
+        <table cellpadding="0" cellspacing="0" border="1" style="border:1px solid #666;">
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>年龄</td>
+                    <td>
+                        <button class="new">新增</button>
+                        <button class="search">查找</button>
+                        <button class="cancel">返回</button>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="tbodys">
+                <!-- <tr>
+                    <td class="nam">test1</td>
+                    <td class="se">女</td>
+                    <td class="yea">23</td>
+                    <td>
+                        <button class="del">删除</button>
+                        <button class="edit">修改</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="show">
+            <div class="display">
+                <p>姓名：
+                    <input type="text" id="name">
+                </p>
+                <p>性别：
+                    <input type="text" id="sex">
+                </p>
+                <p>年龄：
+                    <input type="text" name="" id="year">
+                </p>
+                <p>
+                    <button class="submit">提交</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var add = true;
+        var index = 0;
+        var list = [{ name: 'yangnan', sex: '女', year: 18 }]
+        //显示弹框
+        $('.new').click(function () {
+            $('.show').show();
+            add = true;
+        })
+        //新增
+        $('.submit').click(function () {
+            var name = $('#name').val();
+            var sex = $('#sex').val();
+            var year = $('#year').val();
+            if (add) {
+                list.push({ name: name, sex: sex, year: year });
+            } else {
+                list[index] = { name: name, sex: sex, year: year };
+            }
+            $('.show').hide();
+            initTable(list)
+        })
+        function initTable(arr) {
+            var initArr = arr;
+            var listHtml = '';
+            for (let index = 0; index < initArr.length; index++) {
+                listHtml += '<tr><td class="nam">' + initArr[index].name + '</td><td class="se">' + initArr[index].sex + '</td><td class="yea">' + initArr[index].year + '</td><td><button class="del">删除</button><button class="edit">修改</button></td></tr>'
+            }
+            $('#tbodys').html(listHtml);
+            $('#name').val('');
+            $('#sex').val('');
+            $('#year').val('');
+        }
+        initTable(list);
+        // 返回
+        $('.cancel').click(function () {
+            initTable(list);
+
+        })
+        //删除
+        $('#tbodys').delegate('.del', 'click', function () {
+            // $(this).closest('tr').remove();
+            var x = $(this).closest('tr').index();
+            // list.splice(x,1);
+            list1 = list.slice(0, x);
+            list2 = list.slice(x + 1);
+            list = list1.concat(list2);
+            initTable()
+        })
+        //修改
+        $('#tbodys').delegate('.edit', 'click', function () {
+            add = false;
+            $('.show').show();
+            $('#name').val($(this).closest('tr').children('.nam').text());
+            $('#sex').val($(this).closest('tr').children('.se').text());
+            $('#year').val($(this).closest('tr').children('.yea').text());
+            index = $(this).closest('tr').index();
+            console.log(index);
+        })
+
+        //查找
+        $('.search').click(function () {
+            var value = $("#search").val();
+            var filterArr = list.filter(function (item) {
+                return value == item.year
+            });
+            initTable(filterArr)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery实现增删改查</title>
+    <link rel="stylesheet" href="./css/operations.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <table cellpadding="0" cellspacing="0" border="1" style="border:1px solid #666;">
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>年龄</td>
+                    <td>
+                        <button class="new">新增</button>
+                        <button>查找</button>
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="tbodys">
+                <tr>
+                    <td class="nam">test1</td>
+                    <td class="se">女</td>
+                    <td class="yea">23</td>
+                    <td>
+                        <button class="del">删除</button>
+                        <button class="edit">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nam">test2</td>
+                    <td class="se">女</td>
+                    <td class="yea">23</td>
+                    <td>
+                        <button class="del">删除</button>
+                        <button class="edit">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nam">test3</td>
+                    <td class="se">女</td>
+                    <td class="yea">23</td>
+                    <td>
+                        <button class="del">删除</button>
+                        <button class="edit">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nam">test4</td>
+                    <td class="se">女</td>
+                    <td class="yea">23</td>
+                    <td>
+                        <button class="del">删除</button>
+                        <button class="edit">修改</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="show">
+            <div class="display">
+                <p>姓名：
+                    <input type="text" id="name">
+                </p>
+                <p>性别：
+                    <input type="text" id="sex">
+                </p>
+                <p>年龄：
+                    <input type="text" name="" id="year">
+                </p>
+                <p>
+                    <button class="submit" onclick="addHtml()">提交</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var add = true;
+        var index = 0;
+        $('.new').click(function () {
+            $('.show').show();
+            add = true;
+        })
+
+        function addHtml() {
+            var name = $('#name').val();
+            var sex = $('#sex').val();
+            var year = $('#year').val();
+            if (add) {
+                var tr = '<tr><td class="nam">' + name + '</td><td class="se">' + sex + '</td><td class="yea">' + year + '</td><td><button class="del">删除</button><button class="edit">修改</button></td></tr>';
+                $('#tbodys').append(tr);
+            } else {
+                console.log($('tr').eq(index))
+                $('tbody tr').eq(index).children('.nam').text(name);
+                $('tbody tr').eq(index).children('.se').text(sex);
+                $('tbody tr').eq(index).children('.yea').text(year);
+            }
+
+            $('.show').hide();
+        }
+        $('#tbodys').delegate('.del', 'click', function () {
+            $(this).closest('tr').remove();
+        })
+
+        $('#tbodys').delegate('.edit', 'click', function () {
+            $('.show').show();
+            add = false;
+            index = $(this).closest('tr').index();
+            var na = $(this).closest('tr').children('.nam').text();
+            var s = $(this).closest('tr').children('.se').text();
+            var ye = $(this).closest('tr').children('.yea').text();
+            $('#name').val(na);
+            $('#sex').val(s);
+            $('#year').val(ye);
+        })
+
+    </script>
+</body>
+
+</html>
